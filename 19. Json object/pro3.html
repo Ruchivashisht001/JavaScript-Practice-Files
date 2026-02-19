@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let jsonObj = {
+            Name: "Ruchi",
+            Occupation: "Web Devloper",
+            ID: "24736",
+            Salary: '40000'
+        }
+        console.log(jsonObj);
+         
+        // stringify is used to convert an object into a srting
+        let  myjsonstr = JSON.stringify(jsonObj);
+         console.log(myjsonstr);
+         
+        //  now we can apply all string functions here
+        myjsonstr = myjsonstr.replace("40000", '50000');
+        console.log(myjsonstr);
+
+        // parse is used to convert a string into an object
+        let newjsonstr = JSON.parse(myjsonstr);
+        console.log(newjsonstr);
+    </script>
+</body>
+</html>

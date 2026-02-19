@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function greet(){
+        //     console.log('Welcome to coding world');
+        // }
+        // greet();
+        let greet = () => {
+            console.log('Welcome to coding world');
+        }
+         greet();
+
+        // let sum = (a, b)=>{
+        //     return a+b;
+        // };
+
+        //  let sum = (a, b)=> a+b;
+
+        let obj= {
+            names: ["Raam", "Shyam", "Sita", "Gita"],
+            greeting: " Good morning",
+            speak(){
+                this.names.forEach((student) => {            
+                //   Arrow function will take this function of its parent object which cannot be done by using function
+                console.log("Hello " + student + this.greeting);
+                });
+            }
+        }
+        obj.speak();
+    </script>
+</body>
+</html>

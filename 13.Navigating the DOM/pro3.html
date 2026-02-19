@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- DOM :- Document Object Model -->
+    <!-- DOM helps to use or change the html content in js  -->
+    <div class="container">
+        <ul id="nav" class="main">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact us</li>
+            <li>Legal</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="main">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione error incidunt deleniti vero labore officiis
+        ipsa facere fugit a, impedit, laboriosam iure, eligendi laborum corrupti consequatur eveniet odit magnam vel!
+    </div>
+    <!-- We can form a string of html content by using id.innerhtml  -->
+    <script>
+        let nav = document.getElementById('nav');
+        console.log(nav);
+        let main = document.getElementsByClassName('main');
+        console.log(main);
+
+        let sel = document.querySelector('.main');
+        console.log("Selector returns", sel);
+        let sel = document.querySelector('#nav');
+        console.log("Selctor returns", sel);
+            </script>
+</body>
+
+</html>

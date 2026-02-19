@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn{
+        border: 2px solid black;
+        color: white;
+        background-color: black;
+        padding: 10px 10px;
+        margin: 40px 550px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div>
+        <p id="main">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta rem quae voluptatem esse suscipit quidem
+            sequi magnam voluptates eius asperiores, assumenda eligendi maxime dolorem doloribus amet laboriosam, quos
+            illo error, ipsam tempore adipisci non vitae. Dicta minima asperiores fugit nam ab ut officia placeat
+            veritatis, aspernatur sint recusandae cumque iure id consectetur sit! Voluptatum quam ipsum quae ducimus,
+            natus porro nesciunt! Ad non soluta tenetur laboriosam, fugiat voluptatem nobis praesentium asperiores
+            corporis fugit aut eos? Laudantium nam sit, recusandae, quas officia saepe voluptates voluptatibus, labore
+            soluta architecto nemo nostrum a alias iste animi reprehenderit sapiente veritatis veniam inventore earum.
+            Fugiat, dolorum mollitia nihil commodi eum praesentium quo necessitatibus qui est recusandae. Modi dolorem
+            harum, id ut quaerat fugit hic asperiores tempora quisquam reiciendis voluptatibus repellendus pariatur
+            tempore earum ratione nihil soluta omnis sequi nemo debitis ex. Omnis cumque, ipsum aut voluptates
+            blanditiis esse sit eaque facere optio ex exercitationem nemo earum ut molestiae atque! Aliquid cum deleniti
+            dolorem alias a. Voluptatum vero consequatur assumenda ut ipsam cupiditate. Repellendus, tempore ab
+            veritatis eum distinctio accusantium, deleniti impedit vero totam et perferendis sed nesciunt qui neque
+            cupiditate nostrum aperiam. Repellat saepe nobis molestiae quidem iure iste, nesciunt, necessitatibus natus,
+            aliquid exercitationem illum.
+        </p>
+    </div>
+    <div id="btn" onclick="toggleHide()">Show/Hide</div>
+    <script>
+        let main = document.getElementById('main');
+        main.addEventListener('mouseover', function run(){
+         alert("Welcome to page");
+        console.log('Welcome to page');
+        });
+             
+        main.addEventListener('mouseout', function run(){
+             alert("Thanks to use");
+            console.log('Thanks to use');
+        })
+        
+        function toggleHide(){
+        let main = document.getElementById('main');
+        let btn = document.getElementById('btn');
+        if(main.style.display != 'none'){
+          main.style.display = 'none';
+        }
+        else{
+            main.style.display = 'block';
+        }
+    }
+    </script>
+</body>
+
+</html>
